@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -17,9 +16,7 @@ class BlogSeeder extends Seeder
     {
         DB::Table('blogs')->truncate();
         DB::Table('blogs')->insert(
-            [
-
-            ]
+            []
         );
     }
 }
