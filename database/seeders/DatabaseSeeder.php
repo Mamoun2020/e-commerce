@@ -27,6 +27,7 @@ class DatabaseSeeder extends Seeder
                 ProductSeeder::class,
                 FeatureSeeder::class,
                 RateSeeder::class,
+                DiscountSeeder::class,
             ]
         );
     }
