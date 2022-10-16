@@ -29,6 +29,7 @@ class DatabaseSeeder extends Seeder
                 RateSeeder::class,
                 DiscountSeeder::class,
                 BlogSeeder::class,
+                CommentSeeder::class,
             ]
         );
     }
