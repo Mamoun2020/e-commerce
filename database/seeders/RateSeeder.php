@@ -17,7 +17,15 @@ class RateSeeder extends Seeder
     {
        DB::Table('rates')->truncate();
        DB::Table('rates')->insert(
-           []
+
+        [
+           [
+            'id'=>1,
+            'rate'=>4,
+            'comment'=>'lorn test to rate product',
+            'product_id'=>1,
+            ],
+        ],
        );
     }
 }

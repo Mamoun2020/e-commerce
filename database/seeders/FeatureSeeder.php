@@ -18,10 +18,10 @@ class FeatureSeeder extends Seeder
         DB::Table('features')->truncate();
         DB::Table('features')->insert(
             [
-                'id'=>1,
+               [ 'id'=>1,
                 'name'=> 'XL',
                 'type'=>'size-clothes',
-                'product_id'=>1,
+                'product_id'=>1,],
             ]
         );
     }
