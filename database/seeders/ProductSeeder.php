@@ -18,7 +18,7 @@ class ProductSeeder extends Seeder
         DB::Table('products')->truncate();
         DB::Table('products')->insert(
           [
-              'id'=> 1,
+              ['id'=> 1,
               'name'=> 't-shirt',
               'slug'=>'t-shirt',
               'content'=>'lorem test to t-shirt product from clothes category',
@@ -26,7 +26,7 @@ class ProductSeeder extends Seeder
               'price'=> 45.0,
               'quantity'=> 5,
               'discount_id'=>1,
-              'category_id'=>1,
+              'category_id'=>1,],
           ],
         );
     }
