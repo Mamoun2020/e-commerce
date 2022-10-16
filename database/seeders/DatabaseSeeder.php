@@ -28,6 +28,7 @@ class DatabaseSeeder extends Seeder
                 FeatureSeeder::class,
                 RateSeeder::class,
                 DiscountSeeder::class,
+                BlogSeeder::class,
             ]
         );
     }
