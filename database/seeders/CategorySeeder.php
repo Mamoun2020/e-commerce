@@ -18,7 +18,9 @@ class CategorySeeder extends Seeder
         DB::table('categories')->truncate();
         DB::table('categories')->insert(
           [
-
+              ['name'=> 'clothes',
+              'slug'=>'clothes',
+              'parent_id'=>0,],
           ]
         );
     }
