@@ -18,8 +18,9 @@ class FeatureSeeder extends Seeder
         DB::Table('features')->insert(
             [
                 ['id' => 1,
-                    'name' => 'XL',
-                    'type' => 'size-clothes',
+                    'name' => 'clothes',
+                    'value' => 'XL',
+                    'type' => 'size',
                     'product_id' => 1,],
             ]
         );
