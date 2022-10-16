@@ -34,6 +34,7 @@ class DatabaseSeeder extends Seeder
                 TestimonialSeeder::class,
                 CartSeeder::class,
                 OrderSeeder::class,
+                PaymentSeeder::class,
             ]
         );
     }
