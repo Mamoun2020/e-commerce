@@ -211,10 +211,12 @@
     <footer class="main-footer">
         <!-- To the right -->
         <div class="float-right d-none d-sm-inline">
-            Anything you want
+            Made with <i class="fas fa-heart"></i> with more
+            than 100+ <i class="fas fa-coffee"></i> of coffee
+            By Mamoun AbuSalah
         </div>
         <!-- Default to the left -->
-        <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+        <strong>Copyright &copy; 2014-{{date('Y')}} <a href=" ">E-commerce</a>.</strong> All rights reserved.
     </footer>
 </div>
 <!-- ./wrapper -->
