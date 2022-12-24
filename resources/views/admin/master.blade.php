@@ -114,7 +114,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-                    <i class="fas fa-th-large"></i>
+                    <i class="fas fa-user"></i>
                 </a>
             </li>
         </ul>
@@ -131,15 +131,6 @@
 
         <!-- Sidebar -->
         <div class="sidebar">
-            <!-- Sidebar user panel (optional) -->
-            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                <div class="image">
-                    <img src="{{asset('adminassets/dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
-                </div>
-                <div class="info">
-                    <a href="#" class="d-block">Alexander Pierce</a>
-                </div>
-            </div>
 
             <!-- Sidebar Menu -->
             <nav class="mt-2">
@@ -201,8 +192,20 @@
     <aside class="control-sidebar control-sidebar-dark">
         <!-- Control sidebar content goes here -->
         <div class="p-3">
-            <h5>Title</h5>
-            <p>Sidebar content</p>
+            <!-- Sidebar user panel (optional) -->
+            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                <div class="image">
+                    <img src="{{asset('adminassets/dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2" alt="User Image">
+                </div>
+                <div class="info">
+                    <a href="#" class="d-block">Alexander Pierce</a>
+                </div>
+            </div>
+            <p href="" onclick="event.preventDefault();document.getElementById('logout-form').submit()" class="btn btn-danger btn-block">Logout</p>
+            <form id="logout-form" action="{{route('logout')}}" method="POST">
+                @csrf
+{{--                <button class="btn btn-danger btn-block">Logout</button>--}}
+            </form>
         </div>
     </aside>
     <!-- /.control-sidebar -->
